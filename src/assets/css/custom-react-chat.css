@@ -1,0 +1,112 @@
+.sc-launcher {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  bottom: unset;
+  right: unset;
+}
+
+.sc-launcher:before {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.sc-launcher .sc-open-icon,
+.sc-launcher .sc-closed-icon {
+  position: absolute;
+  right: unset !important;
+  bottom: 25px !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sc-launcher .sc-open-icon {
+  padding: unset !important;
+}
+
+.sc-message--text {
+  padding: 8px 10px !important;
+  border-radius: 15px !important;
+  width: unset !important;
+}
+
+.sc-header {
+  padding: 0 !important;
+  min-height: unset !important;
+}
+
+.sc-chat-window {
+  bottom: 20px !important;
+  z-index: 1000;
+  text-align: left;
+  text-transform: none !important;
+}
+
+.sc-new-messages-count {
+  top: -10px !important;
+  left: 18px !important;
+  width: 15px !important;
+  height: 15px !important;
+  font-size: 10px;
+}
+.sc-message--avatar {
+  background-image: url(https://app.gopanda.asia/public/backup.png) !important;
+}
+
+.sc-message-list {
+  padding: 10px 0 !important;
+}
+
+.sc-header--img {
+  width: 50px !important;
+  height: 50px;
+}
+
+.sc-header--team-name {
+  padding-left: 0;
+}
+
+.launcher-image-active {
+  background-color: #f02323;
+  width: 9px;
+  border-radius: 50%;
+  height: 9px;
+  border: 1px solid #fff;
+  display: inline-flex;
+  position: absolute;
+  right: 0px;
+  bottom: -4px;
+}
+
+.launcher-wrapper {
+  position: relative;
+}
+
+.launcher-wrapper .sc-launcher {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: 0;
+}
+
+.launcher-attend {
+  color: white;
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  z-index: 1000;
+  width: 370px;
+  height: 55px;
+  line-height: 55px;
+  background: #4e8cff;
+}
+
+.launcher-attend p {
+  margin: 0;
+  font-size: 20px;
+}

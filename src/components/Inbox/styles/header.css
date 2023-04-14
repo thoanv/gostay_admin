@@ -1,0 +1,60 @@
+.sc-header-inbox-custom {
+  background: #4e8cff;
+  min-height: 60px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  color: white;
+  padding: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.2);
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.sc-header--img-inbox-custom {
+  border-radius: 50%;
+  align-self: center;
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+}
+
+.sc-header--team-name-inbox-custom {
+  align-self: center;
+  padding: 10px;
+  flex: 1;
+  user-select: none;
+  border-radius: 5px;
+  text-transform: capitalize
+}
+
+.sc-header--close-button-inbox-custom {
+  width: 40px;
+  align-self: center;
+  height: 40px;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.sc-header--close-button-inbox-custom i {
+  padding: 13px;
+vertical-align: middle;
+}
+
+.sc-header--close-button-inbox-custom:hover {
+  background: #4882ed;
+}
+
+.sc-header--close-button-inbox-custom img {
+  width: 100%;
+  height: 100%;
+  padding: 13px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 450px) {
+  .sc-header-inbox-custom {
+    border-radius: 0px;
+  }
+}

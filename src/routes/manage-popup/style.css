@@ -1,0 +1,19 @@
+.image-popup {
+    cursor: pointer;
+    vertical-align: middle;
+    max-height: 500px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 10%;
+}
+.crop-container {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    right: 0;
+    bottom: 80px;
+  }

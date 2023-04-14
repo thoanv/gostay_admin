@@ -1,0 +1,5 @@
+const config = {
+    API_URL: 'http://18.140.65.53/api/'
+};
+
+export default config;

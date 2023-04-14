@@ -1,0 +1,83 @@
+.sc-launcher-inbox-custom {
+  width: 60px;
+  height: 60px;
+  background-color: #4e8cff;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  border-radius: 50%;
+  box-shadow: none;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.sc-launcher-inbox-custom:before {
+  content: '';
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;  
+  border-radius: 50%;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.sc-launcher-inbox-custom .sc-open-icon-inbox-custom,
+.sc-launcher-inbox-custom .sc-closed-icon-inbox-custom {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  transition: opacity 100ms ease-in-out, transform 100ms ease-in-out;
+}
+
+.sc-launcher-inbox-custom .sc-closed-icon-inbox-custom {
+  transition: opacity 100ms ease-in-out, transform 100ms ease-in-out;
+  width: 60px;
+  height: 60px;
+}
+
+.sc-launcher-inbox-custom .sc-open-icon-inbox-custom {
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0;
+}
+
+.sc-launcher.opened-inbox-custom .sc-open-icon-inbox-custom {
+  transform: rotate(-90deg);
+  opacity: 1;
+}
+
+.sc-launcher.opened-inbox-custom .sc-closed-icon-inbox-custom {
+  transform: rotate(-90deg);
+  opacity: 0;
+}
+
+.sc-launcher-inbox-custom.opened:before {
+  box-shadow: 0px 0px 400px 250px rgba(148, 149, 150, 0.2);
+}
+
+.sc-launcher-inbox-custom:hover {
+  box-shadow: 0 0px 27px 1.5px rgba(0,0,0,0.2);
+}
+
+.sc-new-messages-count-inbox-custom {
+  position: absolute;
+  top: 45px;
+  left: 41px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 50%;
+	width: 15px;
+  height: 15px;
+  background: #ff4646;
+  color: white;
+  text-align: center;
+  margin: auto;
+  font-size: 12px;
+  font-weight: 500;
+  box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}

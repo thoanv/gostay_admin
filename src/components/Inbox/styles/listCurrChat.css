@@ -1,0 +1,62 @@
+.sc-list-current-chat-inbox-custom{
+    width: 100px;
+  position: fixed;
+  max-height: calc(100% - 120px);;
+  right: 20px;
+  bottom: 20px;
+  box-sizing: border-box;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 20px;
+}
+
+.avt-list-current-chat{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avt-list-current-chat-div{
+    position: relative;
+    cursor: pointer;
+}
+
+.active-chat-avt{
+    border: 2px solid #4e8cff;
+}
+
+.avt-list-current-chat-div .ct-delete{
+    display: none;
+}
+
+.avt-list-current-chat-div:hover .ct-delete{
+    position: absolute;
+    top: -3px;
+    left: 41px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 50%;
+      width: 22px;
+    height: 22px;
+    background: #fff;
+    color: #151415ad;
+    text-align: center;
+    margin: auto;
+    font-size: 12px;
+    font-weight: 500;
+    box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+
+
+@media (max-width: 450px) {
+    .sc-list-current-chat-inbox-custom{
+      display: none;
+    }
+  }
